@@ -67,8 +67,3 @@ void start_view()
 		delay_fps(60);
 	}
 }
-void gmae_over()
-{
-
-}
-
