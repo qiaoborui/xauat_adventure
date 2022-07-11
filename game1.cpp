@@ -7,6 +7,8 @@ int start = 2;
 PIMAGE pictures[4];
 
 void game1() {
+	char a[] = "作为建大的一份子志愿工作必不可少，今天我要去帮图书馆整理书籍";
+	draw_story(story1, a);
 	initgraph(WINDOW_WIDTH, WINDOW_HEIGHT);
 	setbkcolor(EGERGB(0xFF, 0xFF, 0xFF));
 	ege_enable_aa(true);

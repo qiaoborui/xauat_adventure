@@ -128,6 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game1.cpp" />
+    <ClCompile Include="general.cpp" />
+    <ClCompile Include="story.cpp" />
     <ClCompile Include="welcomecpp.cpp" />
     <ClCompile Include="xauat_adventure.cpp" />
   </ItemGroup>
@@ -141,7 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game1.h" />
+    <ClInclude Include="general.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="story.h" />
     <ClInclude Include="welcome.h" />
   </ItemGroup>
   <ItemGroup>

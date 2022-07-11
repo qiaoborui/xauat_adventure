@@ -1,5 +1,7 @@
 #pragma once
-#include"main.h"
+#include"general.h"
+#include "story.h"
+
 #define WINDOW_WIDTH 1024
 #define WINDOW_HEIGHT 768
 #define GRID_N 15

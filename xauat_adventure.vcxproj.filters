@@ -24,6 +24,12 @@
     <ClCompile Include="game1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="story.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="general.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="img\start.png">
@@ -53,6 +59,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="game1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="story.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="general.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

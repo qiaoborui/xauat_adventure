@@ -3,15 +3,9 @@
 
 int main()
 {
-	initgraph(900, 600);
-	load_resources();
-	startup();
-
-
-
+	initgraph(900, 600);//生成画布
+	load_resources();//加载资源
+	startup();//初始化
 	start_view();//界面一
-	
-	
-	game1();//界面二
+	game1();//游戏一
 }
-

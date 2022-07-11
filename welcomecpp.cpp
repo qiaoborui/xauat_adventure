@@ -1,8 +1,6 @@
 #include"welcome.h"
 #include <string.h>
-PIMAGE start;
-PIMAGE over;
-PIMAGE button1, button2;
+
 int button1_status = 0;
 int button2_status = 0;
 int isnt_click = 1;
@@ -47,7 +45,7 @@ void start_view()
 	mouse_msg msg;
 	cleardevice();
 	while (isnt_click) {
-		putimage(0, 0, start);
+		putimage(0, 0, start_pic);
 		place_button();
 		msg = mouse_msg();
 		while (mousemsg()) {
@@ -73,16 +71,4 @@ void gmae_over()
 {
 
 }
-void load_resources()
-{
-	start = newimage();
-	getimage(start, "img/start.png");
-	button1 = newimage();
-	button2 = newimage();
-	getimage_pngfile(button1, "img/button.png");
-	getimage_pngfile(button2, "img/button.png");
-}
-void display_transparent(PIMAGE image, int x, int y)
-{
-	putimage_withalpha(NULL, image, x, y);
-}
+
