@@ -135,14 +135,21 @@
     <ClCompile Include="xauat_adventure.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="img\background\game2_back.jpg" />
+    <Image Include="img\background\game3_back.jpg" />
     <Image Include="img\button.png" />
-    <Image Include="img\five_chess\back.jpg" />
-    <Image Include="img\five_chess\bai.png" />
-    <Image Include="img\five_chess\cursor.png" />
-    <Image Include="img\five_chess\hei.png" />
     <Image Include="img\labyrinth\ground.png" />
-    <Image Include="img\labyrinth\man_25x25.png" />
+    <Image Include="img\labyrinth\man_laby.png" />
     <Image Include="img\labyrinth\wall.jpg" />
+    <Image Include="img\pushbox\discrete.png" />
+    <Image Include="img\pushbox\cprogram.png" />
+    <Image Include="img\pushbox\end.png" />
+    <Image Include="img\pushbox\floor.png" />
+    <Image Include="img\pushbox\gongtu.png" />
+    <Image Include="img\pushbox\math.png" />
+    <Image Include="img\pushbox\box_man.png" />
+    <Image Include="img\pushbox\wall.jpg" />
+    <Image Include="img\pushbox\wuli.png" />
     <Image Include="img\start.jpg" />
     <Image Include="img\story\story1.jpg" />
     <Image Include="img\story\story2.jpg" />

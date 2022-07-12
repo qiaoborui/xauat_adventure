@@ -38,18 +38,6 @@
     <Image Include="img\button.png">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="img\five_chess\back.jpg">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="img\five_chess\bai.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="img\five_chess\cursor.png">
-      <Filter>资源文件</Filter>
-    </Image>
-    <Image Include="img\five_chess\hei.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="img\start.jpg">
       <Filter>资源文件</Filter>
     </Image>
@@ -59,13 +47,46 @@
     <Image Include="img\labyrinth\wall.jpg">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="img\labyrinth\man_25x25.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="img\story\story1.jpg">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="img\story\story2.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\background\game2_back.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\background\game3_back.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\labyrinth\man_laby.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\discrete.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\cprogram.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\end.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\floor.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\gongtu.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\math.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\box_man.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\wall.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\pushbox\wuli.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

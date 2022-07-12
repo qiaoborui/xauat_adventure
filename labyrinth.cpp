@@ -54,15 +54,15 @@ void draw_labyrinth() {
 }
 
 void playLabyrinth() {
+	int left_i = 0; int right_i = 0; int down_i = 0; int up_i = 0;
 	cleardevice();
 	laby_story();
 	putimage(0, 0, game1_back);
 	draw_labyrinth();
+	putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, (laby_curse_y - 1) * BRICK_SIZE, 0, 150, 25, 50);
 	unsigned char c;
 	while (1) {
-		putimage(0, 0, game1_back);
-		draw_labyrinth();
-		putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, laby_curse_y * BRICK_SIZE);
+		//putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, (laby_curse_y-1) * BRICK_SIZE,0,0,25,50);
 		if (laby_curse_x == 22 && laby_curse_y == 4) {
 			break;
 		}
@@ -70,22 +70,55 @@ void playLabyrinth() {
 		switch (c) {
 		case 'a':
 		case 'A':
-			if (map[laby_curse_x - 1][laby_curse_y] == 0 && laby_curse_x>0) laby_curse_x--;
+			if (map[laby_curse_x - 1][laby_curse_y] == 0 && laby_curse_x > 0)
+			{
+				laby_curse_x--;
+				left_i = left_i == 3 ? 0 : left_i;
+				cleardevice();
+				putimage(0, 0, game1_back);
+				draw_labyrinth();
+				putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, (laby_curse_y - 1) * BRICK_SIZE, left_i*50, 100, 25, 50);
+				left_i++;
+			}
 			break;
 		case 'd':
 		case 'D':
-			if (map[laby_curse_x + 1][laby_curse_y] == 0 && laby_curse_x<22) laby_curse_x++;
+			if (map[laby_curse_x + 1][laby_curse_y] == 0 && laby_curse_x < 22) {
+				laby_curse_x++;
+				right_i = right_i == 3 ? 0 : right_i;
+				cleardevice();
+				putimage(0, 0, game1_back);
+				draw_labyrinth();
+				putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, (laby_curse_y - 1) * BRICK_SIZE, right_i * 50, 150, 25, 50);
+				right_i++;
+			}
 			break;
 		case 'W':
 		case 'w':
-			if (map[laby_curse_x][laby_curse_y - 1] == 0&& laby_curse_y>0) laby_curse_y--;
+			if (map[laby_curse_x][laby_curse_y - 1] == 0 && laby_curse_y > 0)
+			{
+				laby_curse_y--;
+				up_i = up_i == 3 ? 0 : up_i;
+				cleardevice();
+				putimage(0, 0, game1_back);
+				draw_labyrinth();
+				putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, (laby_curse_y - 1) * BRICK_SIZE, up_i * 50, 0, 25, 50);
+				up_i++;
+			}
 			break;
 		case 's':
 		case 'S':
-			if (map[laby_curse_x][laby_curse_y + 1] == 0 && laby_curse_y<22) laby_curse_y++;
+			if (map[laby_curse_x][laby_curse_y + 1] == 0 && laby_curse_y < 22) {
+				laby_curse_y++;
+				down_i = down_i == 3 ? 0 : down_i;
+				cleardevice();
+				putimage(0, 0, game1_back);
+				draw_labyrinth();
+				putimage_withalpha(NULL, man_pic, OFFSET_X + laby_curse_x * BRICK_SIZE, (laby_curse_y - 1) * BRICK_SIZE, down_i * 50, 50, 25, 50);
+				down_i++;
+			}
 			break;
 		}
 		PlaySound(TEXT("sounds/labyrinth/labyrinth.wav"), NULL, SND_NOSTOP | SND_ASYNC | SND_NOWAIT);
-		cleardevice();
 	}
 }
