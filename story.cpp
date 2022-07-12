@@ -1,4 +1,6 @@
 #include"story.h"
+
+
 void draw_story(PIMAGE story_back,char *story_text) {
 	static int level = 1;
 	cleardevice();
@@ -8,6 +10,7 @@ void draw_story(PIMAGE story_back,char *story_text) {
 	unsigned char c;
 	while (story_status) {
 		putimage(0,0,story1);
+		setcolor(EGERGB(0x00, 0x00, 0x00));
 		outtextrect(10,480,880,110,story_text);
 		c = getch();
 		switch (c) {

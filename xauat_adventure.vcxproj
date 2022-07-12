@@ -127,8 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="game1.cpp" />
     <ClCompile Include="general.cpp" />
+    <ClCompile Include="labyrinth.cpp" />
+    <ClCompile Include="push_box.cpp" />
     <ClCompile Include="story.cpp" />
     <ClCompile Include="welcomecpp.cpp" />
     <ClCompile Include="xauat_adventure.cpp" />
@@ -139,17 +140,24 @@
     <Image Include="img\five_chess\bai.png" />
     <Image Include="img\five_chess\cursor.png" />
     <Image Include="img\five_chess\hei.png" />
-    <Image Include="img\start.png" />
+    <Image Include="img\labyrinth\ground.png" />
+    <Image Include="img\labyrinth\man_25x25.png" />
+    <Image Include="img\labyrinth\wall.jpg" />
+    <Image Include="img\start.jpg" />
+    <Image Include="img\story\story1.jpg" />
+    <Image Include="img\story\story2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game1.h" />
     <ClInclude Include="general.h" />
+    <ClInclude Include="labyrinth.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="push_box.h" />
     <ClInclude Include="story.h" />
     <ClInclude Include="welcome.h" />
   </ItemGroup>
   <ItemGroup>
-    <Media Include="sounds\chess\chess.wav" />
+    <Media Include="sounds\labyrinth\bgm.wav" />
+    <Media Include="sounds\labyrinth\labyrinth.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

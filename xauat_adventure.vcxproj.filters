@@ -21,20 +21,20 @@
     <ClCompile Include="welcomecpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="game1.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="story.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="general.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="labyrinth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="push_box.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="img\start.png">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="img\button.png">
       <Filter>资源文件</Filter>
     </Image>
@@ -50,6 +50,24 @@
     <Image Include="img\five_chess\hei.png">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="img\start.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\labyrinth\ground.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\labyrinth\wall.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\labyrinth\man_25x25.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\story\story1.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img\story\story2.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="welcome.h">
@@ -58,18 +76,24 @@
     <ClInclude Include="main.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="game1.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="story.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="general.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="labyrinth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="push_box.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Media Include="sounds\chess\chess.wav">
+    <Media Include="sounds\labyrinth\labyrinth.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="sounds\labyrinth\bgm.wav">
       <Filter>资源文件</Filter>
     </Media>
   </ItemGroup>

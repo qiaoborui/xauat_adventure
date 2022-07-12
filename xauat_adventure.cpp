@@ -7,5 +7,6 @@ int main()
 	load_resources();//加载资源
 	startup();//初始化
 	start_view();//界面一
-	game1();//游戏一
+	playLabyrinth();//游戏一
+	//play_push_box();
 }
